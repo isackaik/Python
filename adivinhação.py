@@ -11,18 +11,18 @@ elif nivel == 2:
 elif nivel == 3:
     tentativas_de_acerto = 5
 for rodada in range(1, tentativas_de_acerto + 1):
-    chute = int(input('Rodada {} de {}. Digite um numero de 1 a 100: \n'.format(rodada, tentativas_de_acerto)))
+    chute = int(input('Rodada {} de {}. Digite um número de 1 a 100: \n'.format(rodada, tentativas_de_acerto)))
     acertou = chute == n
     baixo = chute < n
     alto = chute > n
     if acertou:
-        print('Voce acertou')
+        print('Voce acertou.')
         break
     elif baixo:
-        print('Tente mais alto')
+        print('Tente mais alto.')
         pontos = pontos - (1000/tentativas_de_acerto)
     elif alto:
-        print('Tente mais baixo')
+        print('Tente mais baixo.')
         pontos = pontos - (1000/tentativas_de_acerto)
-    print('Sua pontuação atual é: {}'.format(pontos))
-print('Fim de jogo. Sua pontuação final foi: ', pontos)
+    print('Sua pontuação atual é: {}.'.format(pontos))
+print('Fim de jogo. Sua pontuação final foi: {}.'.format(pontos))
